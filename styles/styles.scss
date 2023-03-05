@@ -8,3 +8,44 @@
 }
 
 @import "./partials/base";
+@import "./mixins/utils";
+// Main Section padding and container
+
+main {
+  height: auto;
+  min-height: 100vh;
+  padding: $padding;
+  background-color: $bg;
+  @include flex(column);
+  gap: $padding;
+}
+
+// Header Section
+
+header {
+  @include flex(column);
+  gap: $baseFontSize;
+  text-align: center;
+  width: 100%;
+  max-width: $headerWidth;
+
+  h1 {
+    @include flex(column);
+    gap: 0;
+    font-size: calc($baseFontSize * 1.75);
+    color: $text-dark;
+
+    & span {
+      font-weight: 200;
+    }
+
+    & strong {
+      font-weight: 600;
+    }
+  }
+
+  p {
+    font-size: $baseFontSize;
+    color: $text-light;
+  }
+}

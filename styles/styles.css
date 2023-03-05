@@ -5,4 +5,46 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+main {
+  height: auto;
+  min-height: 100vh;
+  padding: 3rem;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 35rem;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+  font-size: 1.75rem;
+  color: hsl(234, 12%, 34%);
+}
+header h1 span {
+  font-weight: 200;
+}
+header h1 strong {
+  font-weight: 600;
+}
+header p {
+  font-size: 1rem;
+  color: hsl(229, 6%, 66%);
 }/*# sourceMappingURL=styles.css.map */
