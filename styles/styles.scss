@@ -49,3 +49,14 @@ header {
     color: $text-light;
   }
 }
+
+// card and card container
+@import "./partials/card";
+.card-list {
+  list-style: none;
+  display: grid;
+  gap: calc($baseFontSize * 2);
+  margin-top: $baseFontSize;
+}
+
+@import "./partials/media";

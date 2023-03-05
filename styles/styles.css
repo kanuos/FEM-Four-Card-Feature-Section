@@ -47,4 +47,92 @@ header h1 strong {
 header p {
   font-size: 1rem;
   color: hsl(229, 6%, 66%);
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 26.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(0 1px 1rem rgba(0, 0, 0, 0.1));
+  border-top: 3.5px solid;
+}
+.card__heading {
+  font-size: 1.12rem;
+  color: hsl(234, 12%, 34%);
+}
+.card__desc {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+.card__img {
+  display: block;
+  height: auto;
+  width: 3rem;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+.card--1 {
+  border-color: hsl(180, 62%, 55%);
+}
+.card--2 {
+  border-color: hsl(0, 78%, 62%);
+}
+.card--3 {
+  border-color: hsl(34, 97%, 64%);
+}
+.card--4 {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.card-list {
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 1.5rem;
+  }
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    max-width: 70rem;
+    gap: 1.5rem;
+  }
+  .card__desc {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .card__img {
+    width: 3.5rem;
+  }
+  .card--1 {
+    grid-column: 1/2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .card--2 {
+    grid-column: 2/3;
+  }
+  .card--3 {
+    grid-column: 2/3;
+  }
+  .card--4 {
+    grid-column: 3/4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }/*# sourceMappingURL=styles.css.map */

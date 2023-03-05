@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: calc($padding * 0.5);
+  }
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    max-width: calc($headerWidth * 2);
+    gap: calc($baseFontSize * 1.5);
+  }
+
+  .card {
+    &__desc {
+      font-size: calc($baseFontSize * 0.9);
+      margin-top: calc($baseFontSize * 0.5);
+    }
+    &__img {
+      width: calc($baseFontSize * 3.5);
+    }
+    &--1 {
+      grid-column: 1 / 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &--2 {
+      grid-column: 2 / 3;
+    }
+    &--3 {
+      grid-column: 2 / 3;
+    }
+    &--4 {
+      grid-column: 3 / 4;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

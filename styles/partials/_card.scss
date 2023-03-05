@@ -1,0 +1,45 @@
+
+.card {
+  background: $card-bg;
+  padding: calc($padding * 0.5);
+
+  width: 100%;
+  max-width: calc($headerWidth * 0.75);
+
+  border-radius: calc($baseFontSize * 0.25);
+  box-shadow: $shadow;
+  filter: drop-shadow($shadow);
+
+  border-top: 3.5px solid;
+
+  &__heading {
+    font-size: calc($baseFontSize * 1.12);
+    color: $text-dark;
+  }
+  &__desc {
+    color: $text-light;
+    font-size: calc($baseFontSize * 0.8);
+    margin-top: calc($baseFontSize * 0.25);
+  }
+  &__img {
+    display: block;
+    height: auto;
+    width: calc($baseFontSize * 3);
+    margin-top: calc($baseFontSize * 2);
+    margin-left: auto;
+  }
+
+  //   variations
+  &--1 {
+    border-color: $color-2;
+  }
+  &--2 {
+    border-color: $color-1;
+  }
+  &--3 {
+    border-color: $color-3;
+  }
+  &--4 {
+    border-color: $color-4;
+  }
+}
